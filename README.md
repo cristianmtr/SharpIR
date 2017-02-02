@@ -10,7 +10,8 @@ Based on an original work of Dr. Marcal Casas-Cartagena .
 # Usage
 
 - #include \<SharpIR.h\>
-- SharpIR sharp(ir_analog_pin, model);
+- SharpIR sharp;
+- sharp.begin(ir_analog_pin, model);
 - int dist = sharp.distance();
 
 Model : 
