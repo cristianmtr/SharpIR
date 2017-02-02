@@ -48,7 +48,10 @@
 //    > 20150 is the int for GP2Y0A02YK and 
 //    > 100500 is the long for GP2Y0A710K0F
 //    The numbers reflect the distance range they are designed for (in cm)
-SharpIR::SharpIR(int irPin, long sensorModel) {
+SharpIR::SharpIR() {
+}
+
+void SharpIR::begin(int irPin, long sensorModel) {
   
     _irPin=irPin;
     _model=sensorModel;

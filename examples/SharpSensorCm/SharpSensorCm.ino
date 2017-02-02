@@ -7,11 +7,12 @@
 //                                            20150 for GP2Y0A02Y
 //                                            (working distance range according to the datasheets)
 
-SharpIR SharpIR(ir, model);
+SharpIR SharpIR;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
+  SharpIR.begin(ir, model);
 }
 
 void loop() {
